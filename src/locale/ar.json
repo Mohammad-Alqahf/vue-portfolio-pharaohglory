@@ -1,0 +1,372 @@
+{
+    
+    "nav":{
+        "wishlist":"الرغبات",
+        "profile":"الملف الشخصي",
+        "search":"بحث",
+        "input":"اعثر على اماكن",
+        "time":"في أي وقت",
+        "reigster":"انشاء حساب",
+        "login":"تسجيل الدخول",
+        "clientarea":"لوحة التحكم",
+        "logout":"تسجيل الخروج",
+        "result":"نتيجة البحث"
+    },
+    "selector":{
+        "culture":"ثقافة",
+        "food":"اطعمة",
+        "nature":"طبيعة",
+        "sport":"رياضة"
+    },
+    "trips":{
+        "culture":"تجارب ثقافية لا تنسى",
+        "food":"تجارب اطعمة لا تنسى",
+        "nature":"تجارب طبيعية لا تنسى",
+        "sport":"تجارب رياضية لا تنسى",
+        "price":"من ${amount} للشخص",
+        "add_wish":"اضافة الى الرغبات",
+        "remove_wish":"مسح من الرغبات",
+        "share":"مشاركة",
+        "copid":"تم نسخ الرابط",
+        "review":"تقيمات",
+        "tip":"احجز مقعدك اليوم ",
+        "check":{
+            "title":"التحقق من الرحلة",
+            "header":"التحقق من توافر الرحلة",
+            "adult":"بالغ",
+            "child":"طفل",
+            "price":"تفاصيل السعر",
+            "total":"الاجمالي",
+            "date":"الرجاء اختيار التاريخ",
+            "button":"التحقق من الرحلة",
+            "from":"من",
+            "person":"للشخص الواحد"
+        },
+        "about":"عن الرحلة",
+        "experience":"ماذا تتضمن",
+        "highlight":"ابرز النقاط",
+        "desc":"الوصف الكامل",
+        "include":"تتضمن",
+        "meeting":"نقطة الاجتماع",
+        "map":"فتح في خرائط غوغل",
+        "subheader":"قد يعجبك ايضا . . .",
+        "customer_review":"تقيمات الرحلة",
+        "header":"جميع التقييمات صادرة عن عملاء تم التحقق من هويتهم وقاموا بشراء النشاط. لا يمكن إرسال التقييمات إلا بعد انتهاء النشاط.",
+        "overall":"متوسط التقيمات",
+        "based":"بنائا على {amount} تقيمات",
+        "your":"الرجاء كتابة تقيمك",
+        "button":"ارسال"
+    },
+    "auth":{
+        "email":"البريد الالكتروني",
+        "password":"كلمة المرور",
+        "button":"ارسال",
+        "or":"أو",
+        "register":{
+            "first_name":"الاسم الاول",
+            "last_name":"الاسم الاخير",
+           
+            
+            "google":"انشاء حساب بواسطة غوغل",
+            "already":"لديك حساب؟"
+        },
+        "login":{
+            "google":"تسجيل الدخول بواسطة غوغل",
+            "forget":"نسيت كلمة المرور؟",
+            "new":"حساب جديد؟"
+        }
+    },
+    "clientarea":{
+        "adult":"بالغ",
+        "child":"طفل",
+        "details":{
+            "trip":"الرحلة",
+            "date":"تاريخ الحجز",
+            "action":"الخيارات",
+            "view":"عرض التفاصيل",
+            "member":"الاشخاص",
+            "dates":"التاريخ",
+            "reservtion":"تاريخ الحجز",
+            "pay_date":"تاريخ الدفع",
+            "payment":"معلومات الفاتورة",
+            "payment_id":"معرف الفاتورة",
+            "price":"الاجمالي",
+            "refund":"طلب مرتجع"
+        },
+        "account":{
+            "personal":"المعلومات الشخصية",
+            "auth":"معلومات الدخول",
+            "title":"اعدادات الحساب",
+            "first_name":"الاسم الاول",
+            "last_name":"الاسم الاخير",
+            "phone":"رقم الهاتف",
+            "old":"كلمة المرور القديمة",
+            "new":"كلمة المرور الجديدة",
+            "button":"تغير"
+        }
+    },
+    "wishlist":{
+        "title":"قائمة الرغبات",
+        "empty":"قائمة الرغبات فارغة"
+    },
+    "footer":{
+        "support":{
+            "title":"الدعم",
+            "contact":"اتصل بنا",
+            "pp":"شروط الاستخدام",
+            "ln":"المعلومات القانونية"
+        },
+        "company":{
+            "title":"الشركة",
+            "about":"من نحن",
+            "blog":"المقالات",
+            "gift":"بطاقات الهدايا"
+        },
+        "copy":"جميع الحقوق محفوظة"
+    },
+    "messages":{
+        "trip":{
+            "available":"الرحلة المطلوبة موجود سارع بالحجز",
+            "full":"عذرا عدد الامكان المتاحة هو: "
+        },
+        "auth":{
+            "register":"تم انشاء حسابك بنجاح الرجاء تفعيل حسابك عبر الرابط المرسل الى بريدك الالكتروني"
+
+        }
+    },
+
+    "dash":{
+        "login":{
+            "login":"تسجيل دخول",
+            "email":"البريد الإلكتروني",
+            "password":"كلمة المرور",
+            "remember_me":"تذكرني",
+            "log":"تسجيل",
+            "email_is_required":"البريد الإلكتروني مطلوب",
+            "password_is_required":"كلمة المرور مطلوبة"
+        },
+        "trips":{
+            "search":"بحث",
+            "create":"إنشاء",
+            "title":"العنوان",
+            "category":"النوع",
+            "quantity":"العدد",
+            "availabilty":"الإتاحة",
+            "actions":"الخيارات",
+            "curd_trip":{
+                "create_a_trip":"إنشاء رحلة",
+                "title_in_english":"العنوان بالأنجليزية",
+                "title_in_arabic":"العنوان بالعربية",
+                "description_in_english":"التفاصيل بالأنجليزية",
+                "description_in_arabic":"التفاصيل بالعربية",
+                "full_description_in_english":"التفاصيل الكاملة بالأنجليزية",
+                "full_description_in_arabic":"التفاصيل الكاملة بالعربية",
+                "select_a_category":"اختر فئة",
+                "select_a_type":"اختر نوع",
+                "highlights":"أبرز النقاط",
+                "includes":"المتضمنات",
+                "about_activity":"حول الفعالية",
+                "date_and_time":"التاريخ و الوقت",
+                "payments":"المدفوعات",
+                "members_count":"عدد الأعضاء",
+                "images":"الصور",
+                "meeting_point":"نقطة الالتقاء",
+                "add":"إضافة",
+                "in_english":"بالأنجليزية",
+                "in_arabic":"بالعربية",
+                "icon":"الرمز",
+                "start_date":"تاريخ البدء",
+                "end_date":"تاريخ الانتهاء",
+                "duration":"المدة",
+                "adult_price":"السعر للبالغين",
+                "adult_discount":"الحسم للبالغين",
+                "children_price":"السعر للأطفال",
+                "children_discount":"الحسم للأطفال",
+                "enroll_members":"الأعضاء المسجلين",
+                
+                "start_date_required":"تاريخ البدء مطلوب",
+                "end_date_required":"تاريخ الانتهاء مطلوب",
+                "duration_required":"المدة مطلوبة",
+                "title_english_required":"العنوان بالأنجليزية مطلوب",
+                "title_arabic_required":"العنوان بالعربية مطلوب",
+                "description_english_required":"التفاصيل بالأنجليزية مطلوبة",
+                "description_arabic_required":"التفاصيل بالعربية مطلوبة",
+                "full_description_english_required":"التفاصيل الكاملة بالأنجليزية مطلوبة",
+                "full_description_arabic_required":"التفاصيل الكاملة بالعربية مطلوبة",
+                "category_required":"يجب اختيار فئة الحدث",
+                "type_required":"يجب اختيار نوع الحدث",
+
+
+                "delete_trip":"حذف الرحلة",
+                "delete_qustion1":"هل أنت متأكد أنك تريد حذف الرحلة",
+                "delete_qustion2":"الذي عنوانها",
+                "delete":"حذف",
+                "?":"؟",
+
+
+                "edit_trip":"تعديل الرحلة"
+            },
+            "reviews":{
+                "search":"بحث",
+                "reviews_for_trip":"مراجعات الرحلة",
+                "user":"المستخدم",
+                "rate":"التقييم",
+                "description":"التفاصيل",
+                "actions":"الخيارات",
+                "curd":{
+                    "delete_reivew":"حذف المراجعة",
+                    "delete_qustion1":"هل أنت متأكد أنك تريد حذف المراجعة",
+                    "delete_qustion2":"من المستخدم",
+                    "delete":"حذف",
+                    "?":"؟",
+
+                    "show_review":"عرض المراجعة",
+                    "user_information":"معلومات المستخدم",
+                    "id":"المعرف",
+                    "name":"الاسم",
+                    "review_information":"معلومات المراجعة"
+            }
+      }
+
+        },
+        "category":{
+            "search":"بحث",
+            "create":"إنشاء",
+            "actions":"الخيارات",
+            "id":"المعرف",
+            "category_name":"اسم الفئة",
+            "curd": {
+                "edit_category": "تعديل الفئة",
+                "category_name_in_english": "اسم الفئة بالاتجليزية",
+                "category_name_in_arabic": "اسم الفئة بالعربية",
+                "update": "تحديث",
+                "delete_category": "حذف الفئة",
+                "delete_quastion1":"هل أنت متأكد أنك تريد حذف",
+                "delete_quastion2":"الذي لديه الاسم",
+                "delete": "حذف",
+                "create_a_category": "إنشاء فئة",
+                "?":"؟",
+
+                "en_category_name_required":"اسم الفئة بالانجليزية مطلوب",
+                "ar_category_name_required":"اسم الفئة بالعربية مطلوب"
+            }
+        },
+        "sidebar":{
+            "overview":"الملخص",
+            "trips":"الرحلات",
+            "categories":"الفئات",
+            "payments":"المدفوعات",
+            "accounts":"الحسابات",
+            "website_settings":"إعدادات الموقع",
+            "my_profile":"حسابي",
+            "logout":"تسجيل الخروج"
+        },
+        "home":{
+            "trips":"الرحلات",
+            "reservations":"الحجوزات",
+            "users":"المستخدمين",
+            "incomes":"العائدات",
+            "trips_categorys":"عدد الرحلات حسب الفئة ",
+            "lastest_ready_trip":"آخر رحلات مضافة",
+            "finished_trips":"رحلات منتهية",
+            "sechduled_trips":"رحلات مجدولة",
+            "ready_trips":"رحلات جاهزة",
+            "title":"العنوان",
+            "category":"الفئة",
+            "quantity":"العدد",
+            "new_user":"مستخدمين جُدد",
+            "addition":"إضافي",
+            "new_reservations":"حجوزات جديدة",
+            "added_trips":"رحلات مضافة",
+            "jan":"كانون الثاني",
+            "feb":"شباط",
+            "mar":"آذار",
+            "apr":"نيسان",
+            "may":"أيار",
+            "june":"حزيران",
+            "july":"تموز",
+            "aug":"أب",
+            "sep":"أيلول",
+            "oct":"تشرين الأول",
+            "nov":"تشرين الثاني",
+            "dec":"كانون الأول"
+        },
+        "payments":{
+        "search":"بحث",
+        "user":"المستخدم",
+        "trip":"الرحلة",
+        "count":"العدد",
+        "total_price":"السعر الكلي",
+        "actions":"الخيارات",
+        "curd":{
+                "delete_payment":"حذف الرحلة",
+                "delete_qustion1":"هل أنت متأكد أنك تريد حذف الدفعة",
+                "delete_qustion2":"من المستخدم",
+                "delete":"حذف",
+                "?":"؟",
+
+                "show_payment":"عرض الدفعة",
+                "payment_information":"معلومات الدفعة",
+                "adult_count":"عدد البالغين",
+                "children_count":"عدد الأطفال",
+                "trip_information":"معلومات الرحلة",
+                "title":"العنوان",
+                "category":"الفئة",
+                "adult_price":"السعر للبالغين",
+                "children_price":"السعر للأطفال",
+                "adult_discount":"الخصم للبالغين",
+                "children_discount":"الخصم للأطفال",
+                "user_information":"معلومات المستخدم",
+                "name":"الاسم",
+                "email":"البريد الإلكتروني",
+                "username":"اسم المستخدم"
+            }
+        },
+        "accounts":{
+            "search":"بحث",
+            "name":"الاسم",
+            "username":"اسم المستخدم",
+            "email":"البريد الإلكتروني",
+            "payments":"المدفوعات",
+            "actions":"الخيارات",
+            "curd":{
+                "show_account":"عرض الحساب",
+                "id":"المعرف",
+                "to_trip":"إلى الرحلة",
+                "cash":"المبلغ"
+            }
+        },
+        "website_settings":{
+            "hero_section":"القطاع الرئيسي",
+            "hero_section_description":"التفاصيل للقطاع الرئيسي",
+            "hero_section_title":"العنوان للقطاع الرئيسي",
+            "contact":"الاتصال",
+            "contact_address":"عنوان الاتصال",
+            "contact_email":"البريد الالكتروني للاتصال",
+            "contact_phone":"هاتف الاتصال",
+            "social_media":"وسائل التواصل الاجتماعي",
+            "social_media_facebook":"وسائل التواصل الاجتماعي فيسبوك",
+            "social_media_x":"وسائل التواصل الاجتماعي إكس (تويتر)",
+            "social_media_instagram":"وسائل التواصل الاجتماعي إنستاغرام",
+            "social_media_youtube":"وسائل التواصل الاجتماعي يوتيوب",
+            "social_media_tiktok":"وسائل التواصل الاجتماعي تيك توك"
+        },
+        "my_profile":{
+            "name":"الاسم",
+            "username":"اسم المستخدم",
+            "email":"البريد الإلكتروني",
+            "birthday":"تاريخ الميلاد",
+            "address":"العنوان",
+            "phone":"الهاتف",
+            "current_password":"كلمة السر الحالية",
+            "new_password":"كلمة السر الجديدة",
+            "confirm_new_password":"تأكيد كلمة السر الجديدة",
+            "save":"حفظ",
+            "edit_profile":"تعديل الحساب",
+            "change_password":"تغير كلمة المرور"
+        }
+    }
+
+    
+    
+}
