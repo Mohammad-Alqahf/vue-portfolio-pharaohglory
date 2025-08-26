@@ -123,6 +123,7 @@ const logo = ref(require("@/assets/images/logo.svg"));
 import { onMounted, reactive, ref } from "vue";
 import Message from "primevue/message";
 import { decodeCredential } from "vue3-google-login";
+import users from "@/mock/users.json";
 
 const email = ref(null);
 const password = ref(null);
@@ -203,10 +204,27 @@ function login() {
       }
     });
 }
+function loginMock() {
+  isLoading.value = true;
+  const user = users.find(
+    (u) => u.email === email.value && u.password === password.value
+  );
+  if (user) {
+    isLoading.value = false;
+    localStorage.setItem("_token", user.token);
+    setTimeout(() => {
+      router.push("/");
+    }, 1000);
+  } else {
+    message.value = "email or password or both is wrong";
+    isLoading.value = false;
+  }
+}
 
 const onFormSubmit = ({ valid }) => {
   if (valid) {
-    login();
+    // login();
+    loginMock();
   }
 };
 

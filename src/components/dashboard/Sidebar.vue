@@ -5,12 +5,15 @@
   >
     <div id="sidebar-nav" class="min-vh-100 h-100">
       <div
-        :class="['d-flex flex-column justify-content-between h-100 overflow-auto shadow-3 ',isDark? 'bg-dark':'bg-white']"
+        :class="[
+          'd-flex flex-column  justify-content-between h-100 overflow-auto shadow-3 ',
+          isDark ? 'bg-dark' : 'bg-white',
+        ]"
       >
         <div class="w-100">
           <div
             id="sidebar-header"
-            class="d-flex flex-nowrap justify-content-between mt-0 "
+            class="d-flex flex-nowrap justify-content-between mt-0"
           >
             <div class="d-flex">
               <img
@@ -24,7 +27,10 @@
               class="d-flex justify-content-end align-items-center mb-2 me-2"
             >
               <i
-                :class="['pi pi-align-justify pt-2 cursor-pointer ms-2', isDark ? 'text-dark':'text-white']"
+                :class="[
+                  'pi pi-align-justify pt-2 cursor-pointer ms-2',
+                  isDark ? 'text-dark' : 'text-white',
+                ]"
                 data-bs-toggle="collapse"
                 data-bs-target="#sidebar"
                 @click="sidebarToggleShown"
@@ -32,14 +38,15 @@
             </div>
           </div>
           <div
-            class="profile-section bg-main-color d-flex justify-content-center align-content-center flex-wrap py-3"
+            class="profile-section d-flex justify-content-center align-content-center flex-wrap py-3"
           >
             <div class="d-flex justify-content-center align-items-center w-100">
-              <img
-                src="@/assets/images/dashboard/avatar-1.png"
-                class="user-img"
-                alt="user-image"
-              />
+              <router-link :to="{ name: 'dash.profile' }"
+                ><img
+                  src="@/assets/images/dashboard/avatar-1.png"
+                  class="user-img"
+                  alt="user-image"
+              /></router-link>
             </div>
             <div class="my-2">
               <span
@@ -51,9 +58,12 @@
             </div>
           </div>
           <div
-            :class="['d-flex justify-content-center align-items-center flex-wrap w-100 py-2', isDark ? 'bg-dark':'bg-white']"
+            :class="[
+              'd-flex justify-content-center align-items-center flex-wrap w-100 py-2',
+              isDark ? 'bg-dark' : 'bg-white',
+            ]"
           >
-            <div :class="['list-group border-0 w-90' , isDark? 'dark':'']">
+            <div :class="['list-group border-0 w-90', isDark ? 'dark' : '']">
               <router-link
                 :to="{ name: 'dash.home' }"
                 :class="[
@@ -64,7 +74,7 @@
                 <i
                   :class="['pi pi-objects-column ', isEng ? 'me-2' : 'ms-2']"
                 ></i
-                ><span>{{ $t('dash.sidebar.overview') }}</span>
+                ><span>{{ $t("dash.sidebar.overview") }}</span>
               </router-link>
 
               <router-link
@@ -75,7 +85,7 @@
                 ]"
               >
                 <i :class="['fa-solid fa-plane', isEng ? 'me-2' : 'ms-2']"></i>
-                <span>{{ $t('dash.sidebar.trips') }}</span>
+                <span>{{ $t("dash.sidebar.trips") }}</span>
               </router-link>
               <router-link
                 :to="{ name: 'dash.category' }"
@@ -85,7 +95,7 @@
                 ]"
               >
                 <i :class="['pi pi-filter-fill', isEng ? 'me-2' : 'ms-2']"></i>
-                <span>{{ $t('dash.sidebar.categories') }}</span>
+                <span>{{ $t("dash.sidebar.categories") }}</span>
               </router-link>
 
               <router-link
@@ -101,7 +111,7 @@
                     isEng ? 'me-2' : 'ms-2',
                   ]"
                 ></i
-                ><span>{{ $t('dash.sidebar.payments') }}</span>
+                ><span>{{ $t("dash.sidebar.payments") }}</span>
               </router-link>
 
               <router-link
@@ -112,7 +122,7 @@
                 ]"
               >
                 <i :class="['fa-solid fa-users', isEng ? 'me-2' : 'ms-2']"></i
-                ><span>{{ $t('dash.sidebar.accounts') }}</span>
+                ><span>{{ $t("dash.sidebar.accounts") }}</span>
               </router-link>
 
               <router-link
@@ -123,7 +133,9 @@
                 ]"
               >
                 <i :class="['fa-solid fa-gears', isEng ? 'me-2' : 'ms-2']"></i
-                ><span class="text-nowrap">{{ $t('dash.sidebar.website_settings') }}</span>
+                ><span class="text-nowrap">{{
+                  $t("dash.sidebar.website_settings")
+                }}</span>
               </router-link>
 
               <router-link
@@ -134,7 +146,7 @@
                 ]"
               >
                 <i :class="['pi pi-address-book', isEng ? 'me-2' : 'ms-2']"></i
-                ><span>{{ $t('dash.sidebar.my_profile') }}</span>
+                ><span>{{ $t("dash.sidebar.my_profile") }}</span>
               </router-link>
             </div>
           </div>
@@ -145,7 +157,7 @@
             @click="logout"
           >
             <i :class="['pi pi-sign-out', isEng ? 'me-2' : 'ms-2']"></i>
-            <span> {{ $t('dash.sidebar.logout') }}</span>
+            <span> {{ $t("dash.sidebar.logout") }}</span>
           </button>
         </div>
       </div>
@@ -171,7 +183,7 @@ export default {
       isHovered: false,
       isShown: true,
       isEng: null,
-      isDark:null,
+      isDark: null,
     };
   },
   computed: {
@@ -217,7 +229,7 @@ export default {
 }
 
 #sidebar-header {
-  background-color: #dc1b3f;
+  background-color: #f21e45;
   height: 5rem;
 }
 

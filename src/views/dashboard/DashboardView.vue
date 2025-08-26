@@ -72,7 +72,7 @@ export default {
       langValue: null,
       languages: ["En", "Ar"],
       isEng: null,
-      isDark:null ,
+      isDark: null,
     };
   },
   methods: {
@@ -84,7 +84,6 @@ export default {
       window.location.reload();
     },
     toggleMode() {
-
       document.documentElement.classList.toggle("my-app-dark");
       document.body.classList.toggle("custom-dark");
 
@@ -94,6 +93,7 @@ export default {
         localStorage.setItem("mode", "dark");
       }
       console.log(this.isDark);
+      location.reload();
     },
   },
   beforeMount() {

@@ -41,6 +41,6 @@ async function fetchInfo() {
 }
 
 onMounted(() => {
-  fetchInfo();
+  // fetchInfo();
 });
 </script>
