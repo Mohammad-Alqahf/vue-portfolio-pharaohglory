@@ -5,12 +5,12 @@
   >
     <div id="sidebar-nav" class="min-vh-100 h-100">
       <div
-        :class="['d-flex flex-column justify-content-between flex-wrap h-100 shadow-3 ',isDark? 'bg-dark':'bg-white']"
+        :class="['d-flex flex-column justify-content-between h-100 overflow-auto shadow-3 ',isDark? 'bg-dark':'bg-white']"
       >
         <div class="w-100">
           <div
             id="sidebar-header"
-            class="d-flex flex-nowrap justify-content-between mt-0"
+            class="d-flex flex-nowrap justify-content-between mt-0 "
           >
             <div class="d-flex">
               <img

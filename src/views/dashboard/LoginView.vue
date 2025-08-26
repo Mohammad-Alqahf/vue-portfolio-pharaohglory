@@ -55,13 +55,6 @@
                   variant="simple"
                   >{{ $t($form.email.error?.message) }}</Message
                 >
-                <!-- <input
-                  type="text"
-                  class="form-control"
-                  placeholder="Username"
-                  aria-label="Username"
-                  ref="usernameInput"
-                /> -->
               </div>
               <!-- Password -->
               <div class="w-100 my-2">
@@ -81,33 +74,7 @@
                   >{{ $t($form.password.error?.message) }}</Message
                 >
               </div>
-              <!-- <div class="w-100 mb-2 mt-2 relative">
-                <input
-                  type="password"
-                  class="form-control"
-                  placeholder="Password"
-                  aria-label="Password"
-                  ref="passwordInput"
-                />
-                <div class="show-toggle" @click="passwordShowHideToggle">
-                  <i
-                    ref="toggleIcon"
-                    class="pi pi-eye text-muted"
-                    v-if="inputType == 'password'"
-                  ></i>
-                  <i v-else class="pi pi-eye-slash text-muted"></i>
-                </div>
-              </div> -->
               <div class="w-100 mb-4 flex items-center gap-2">
-                <!-- <input
-                  class="form-check-input"
-                  type="checkbox"
-                  id="remember-me"
-                  v-model="rememberMe"
-                />
-                <label class="form-check-label text-nowrap" for="remember-me">
-                  Remember me
-                </label> -->
                 <Checkbox
                   v-model="rememberMe"
                   inputId="remember-me"
@@ -129,9 +96,6 @@
               </div>
               <!-- Login Button -->
               <div class="w-100 mb-2 d-flex justify-content-center mt-2">
-                <!-- <button type="button" class="btn btn-main" @click="login">
-                  Login
-                </button> -->
                 <Button
                   type="submit"
                   :loading="loadingForData"
@@ -156,7 +120,7 @@ import Message from "primevue/message";
 import Checkbox from "primevue/checkbox";
 import Card from "primevue/card";
 import axios from "axios";
-import { promise } from "zod";
+import users from "@/mock/users.json";
 export default {
   components: {
     Form,
@@ -174,7 +138,6 @@ export default {
       isEng: "",
       isDark: "",
       rememberMe: false,
-      // inputType: "password",
       initialValues: {
         email: "",
         password: "",
@@ -195,16 +158,6 @@ export default {
     };
   },
   methods: {
-    // passwordShowHideToggle() {
-    //   if (this.$refs.passwordInput.type == "password") {
-    //     this.$refs.passwordInput.type = "text";
-    //     this.inputType = "text";
-    //   } else {
-    //     this.$refs.passwordInput.type = "password";
-    //     this.inputType = "password";
-    //   }
-    // },
-    // login() {},
     resolver: ({ values }) => {
       const errors = { email: [], password: [] };
       if (!values.email) {
@@ -250,11 +203,26 @@ export default {
           console.log(e);
         });
     },
+    doAuthMock(email, password) {
+      this.loadingForData = true;
+      const user = users.find(
+        (u) => u.email === email && u.password === password
+      );
+      if (user) {
+        if (this.rememberMe) {
+          localStorage.setItem("_token", user.token);
+        } else {
+          sessionStorage.setItem("_token", user.token);
+        }
+        this.$router.push({ name: "dash.home" });
+      } else {
+        this.loadingForData = false;
+        this.isAuth = true;
+      }
+    },
     onFormSubmit({ valid }) {
       if (valid) {
-        this.doAuth();
-
-        // console.log(this.isAuth);
+        this.doAuthMock(this.email, this.password);
       }
     },
   },

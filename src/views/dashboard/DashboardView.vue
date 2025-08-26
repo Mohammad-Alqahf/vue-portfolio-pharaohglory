@@ -58,7 +58,6 @@ import SelectButton from "primevue/selectbutton";
 import FloatLabel from "primevue/floatlabel";
 import IftaLabel from "primevue/iftalabel";
 import Button from "primevue/button";
-// import Navbar from "@/components/dashboard/Navbar.vue";
 export default {
   components: {
     Sidebar,
@@ -66,7 +65,6 @@ export default {
     FloatLabel,
     IftaLabel,
     Button,
-    // Navbar,
   },
   data() {
     return {
@@ -153,22 +151,7 @@ main:is(.rtl) {
 }
 ::v-deep .table-page thead {
   width: 100%;
-  /* background: linear-gradient(
-    1.2deg,
-    #fc5b78,
-    #ff3c60,
-    #ff1d48,
-    #ff3c60,
-    #fc5b78
-  ); */
-  /* background: linear-gradient(
-    1.2deg,
-    #e1e1e1,
-    #c2c1c1,
-    #9f9f9f,
-    #c2c1c1,
-    #e1e1e1
-  ); */
+
   background-color: #353535;
 }
 ::v-deep .table-page thead tr th:first-child {
@@ -182,10 +165,6 @@ main:is(.rtl) {
   background-color: #ff1d48 !important;
   color: #fff !important;
 }
-/* ::v-deep .p-select-option.p-select-option-selected {
-  background: #c6c6c6;
-  color: #005659;
-} */
 ::v-deep .p-select-option.p-select-option-selected.p-focus {
   background: #a7a7a7;
   color: #ff1d48;
